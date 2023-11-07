@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fusion"
+    app:startDestination="@id/fusion2">
+
+    <fragment
+        android:id="@+id/fusion2"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.fusion"
+        android:label="fragment_fusion"
+        tools:layout="@layout/fragment_fusion" >
+        <action
+            android:id="@+id/action_fusion2_to_stock"
+            app:destination="@id/stock" />
+        <action
+            android:id="@+id/action_fusion2_to_fusionResultChoose"
+            app:destination="@id/fusionResultChoose" />
+    </fragment>
+    <fragment
+        android:id="@+id/stock"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.stock"
+        android:label="stock" >
+        <action
+            android:id="@+id/action_stock_to_fusion2"
+            app:destination="@id/fusion2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fusionResultEnd"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.FusionResultEnd"
+        android:label="FusionResultEnd" >
+        <action
+            android:id="@+id/action_fusionResultEnd_to_fusion2"
+            app:destination="@id/fusion2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fusionResultChoose"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.FusionResultChoose"
+        android:label="FusionResultChoose" >
+        <action
+            android:id="@+id/action_fusionResultChoose_to_fusion2"
+            app:destination="@id/fusion2" />
+        <action
+            android:id="@+id/action_fusionResultChoose_to_fusionResultEnd"
+            app:destination="@id/fusionResultEnd" />
+    </fragment>
+</navigation>

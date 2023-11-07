@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dam_a46304.shinmegamitenseidemonica">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShinMegamiTenseiDemonica">
+        <activity android:name=".activities.Register" />
+        <activity android:name=".activities.Login">
+        </activity>
+        <activity
+            android:name=".activities.SearchResult"
+            android:label="@string/title_activity_search_result">
+        </activity>
+        <activity android:name=".activities.FusionChart" />
+        <activity android:name=".activities.FusionMain" />
+        <activity android:name=".activities.DemonDetail" />
+        <activity android:name=".activities.Compendium">
+        </activity>
+        <activity android:name=".activities.StartScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

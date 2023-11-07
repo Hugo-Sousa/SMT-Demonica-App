@@ -1,0 +1,1118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name ="viewmodel"
+            type ="dam_a46304.shinmegamitenseidemonica.ui.FusionChartViewModel"/>
+        <variable
+            name="race"
+            type="dam_a46304.shinmegamitenseidemonica.entities.Race"/>
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.FusionChart">
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/rhodium_libre"
+        android:text="Fusion Chart"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="343dp"
+        android:layout_height="602dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/table_row"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="31dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/racesDropdown"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:popupBackground="@color/background"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Herald"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[0]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Megami"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[1]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Avian"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[2]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Tree"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[3]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Divine"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[4]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Flight"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[5]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Yoma"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[6]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Nymph"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[7]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Vile"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[8]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Raptor"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[9]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Wood"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[10]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Deity"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[11]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Avatar"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[12]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Holy"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[13]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Genma"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[14]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Fairy"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[15]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Beast"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[16]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Jirae"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[17]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Snake"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[18]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Reaper"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[19]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Wilder"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[20]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Jaki"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[21]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Vermin"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[22]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Fury"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[23]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Lady"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[24]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Dragon"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[25]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Kishin"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[26]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Fallen"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[27]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Brute"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[28]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Femme"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[29]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Night"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[30]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Tyrant"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[31]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Drake"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[32]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Spirit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[33]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Foul"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[34]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Haunt"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[35]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Fiend"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[36]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Enigma"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[37]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="UMA"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[38]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Zealot"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[39]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/table_sep">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_sep"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Geist"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="@{race.results[40]}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

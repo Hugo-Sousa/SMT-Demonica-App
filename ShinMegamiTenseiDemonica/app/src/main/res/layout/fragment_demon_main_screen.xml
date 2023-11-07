@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.demon_main_screen">
+
+    <data>
+        <import type="dam_a46304.shinmegamitenseidemonica.entities.DemonDao"/>
+        <variable
+            name="demon"
+            type="dam_a46304.shinmegamitenseidemonica.entities.Demon"/>
+        <variable
+            name="vm"
+            type="dam_a46304.shinmegamitenseidemonica.ui.DemonDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="32dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="@{demon.name}"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"
+                    android:translationZ="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/header"
+                    tools:text="Metatron" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/header"
+                    android:layout_width="393dp"
+                    android:layout_height="392dp"
+                    android:alpha="0"
+                    android:elevation="9dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/round_img"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="@id/header"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:paletteImage="@{ demon.imgURL }"
+                    app:paletteView="@{ header }" />
+
+                <com.skydoves.androidribbon.RibbonRecyclerView
+                    android:id="@+id/ribbonRecyclerView"
+                    android:layout_width="350dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    app:ribbon_recycler_orientation="horizontal"
+                    tools:listitem="@layout/item_ribbon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/race"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="82dp"
+                    android:fontFamily="@font/raleway"
+                    android:text="@{demon.race}"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@id/align"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ribbonRecyclerView"
+                    tools:text="Herald" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/align"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway"
+                    android:text="@{demon.align}"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/race"
+                    app:layout_constraintTop_toTopOf="@id/race"
+                    tools:text="Light-Law" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/lvl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:text="@{demon.lvlString}"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/ribbonRecyclerView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.651"
+                    app:layout_constraintStart_toEndOf="@+id/name"
+                    tools:text="Lvl: 84" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/stockBtn"
+                    android:layout_width="210dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="72dp"
+                    android:background="@drawable/add_stock_btn"
+                    android:backgroundTintMode="src_atop"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center"
+                    android:text="Add to Stock"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ribbonRecyclerView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:id="@+id/affinityPhys"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/affinity" />
+
+        <ImageView
+            android:id="@+id/affinityGun"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/affinityPhys"
+            app:srcCompat="@drawable/affinity" />
+
+        <ImageView
+            android:id="@+id/affinityFire"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/affinityGun"
+            app:srcCompat="@drawable/affinity" />
+
+        <ImageView
+            android:id="@+id/affinityIce"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/affinityFire"
+            app:srcCompat="@drawable/affinity" />
+
+        <ImageView
+            android:id="@+id/affinityZap"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/affinityIce"
+            app:srcCompat="@drawable/affinity" />
+
+        <ImageView
+            android:id="@+id/affinityWind"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/affinityZap"
+            app:srcCompat="@drawable/affinity" />
+
+        <ImageView
+            android:id="@+id/affinityLight"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/affinityWind"
+            app:srcCompat="@drawable/affinity" />
+
+        <ImageView
+            android:id="@+id/affinityCurse"
+            android:layout_width="35dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="12.5dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/affinityLight"
+            app:srcCompat="@drawable/affinity" />
+
+
+        <ImageView
+            android:id="@+id/affinityPhysImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="2.5dp"
+            android:layout_marginTop="3.5dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="@+id/affinityPhys"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="@+id/affinityPhys"
+            app:layout_constraintTop_toTopOf="@+id/affinityPhys"
+            app:srcCompat="@drawable/phys_icon" />
+
+        <ImageView
+            android:id="@+id/affinityGunImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            android:layout_marginStart="1.dp"
+            android:layout_marginTop="3.5dp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityGun"
+            app:layout_constraintStart_toStartOf="@+id/affinityGun"
+            app:layout_constraintTop_toTopOf="@+id/affinityGun"
+            app:srcCompat="@drawable/gun_icon" />
+
+        <ImageView
+            android:id="@+id/affinityFireImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            android:layout_marginStart="1.dp"
+            android:layout_marginTop="3.5dp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityFire"
+            app:layout_constraintStart_toStartOf="@+id/affinityFire"
+            app:layout_constraintTop_toTopOf="@+id/affinityFire"
+            app:srcCompat="@drawable/fire_icon" />
+
+        <ImageView
+            android:id="@+id/affinityIceImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            android:layout_marginStart="1.dp"
+            android:layout_marginTop="3.5dp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityIce"
+            app:layout_constraintStart_toStartOf="@+id/affinityIce"
+            app:layout_constraintTop_toTopOf="@+id/affinityIce"
+            app:srcCompat="@drawable/ice_icon" />
+
+        <ImageView
+            android:id="@+id/affinityZapImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            android:layout_marginStart="1.dp"
+            android:layout_marginTop="3.5dp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityZap"
+            app:layout_constraintStart_toStartOf="@+id/affinityZap"
+            app:layout_constraintTop_toTopOf="@+id/affinityZap"
+            app:srcCompat="@drawable/lighting_icon" />
+
+        <ImageView
+            android:id="@+id/affinityWindImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            android:layout_marginStart="1.dp"
+            android:layout_marginTop="3.5dp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityWind"
+            app:layout_constraintStart_toStartOf="@+id/affinityWind"
+            app:layout_constraintTop_toTopOf="@+id/affinityWind"
+            app:srcCompat="@drawable/wind_icon" />
+
+        <ImageView
+            android:id="@+id/affinityLightImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            android:layout_marginStart="1.dp"
+            android:layout_marginTop="3.5dp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityLight"
+            app:layout_constraintStart_toStartOf="@+id/affinityLight"
+            app:layout_constraintTop_toTopOf="@+id/affinityLight"
+            app:srcCompat="@drawable/light_icon" />
+
+        <ImageView
+            android:id="@+id/affinityCurseImg"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:background="@drawable/affinity"
+            android:scaleType="fitXY"
+            android:layout_marginStart="1.dp"
+            android:layout_marginTop="3.5dp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityCurse"
+            app:layout_constraintStart_toStartOf="@+id/affinityCurse"
+            app:layout_constraintTop_toTopOf="@+id/affinityCurse"
+            app:srcCompat="@drawable/curse_icon" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.physString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityPhys"
+            app:layout_constraintStart_toStartOf="@+id/affinityPhys"
+            app:layout_constraintTop_toBottomOf="@+id/affinityPhysImg" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.gunString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityGun"
+            app:layout_constraintStart_toStartOf="@+id/affinityGun"
+            app:layout_constraintTop_toBottomOf="@+id/affinityGunImg" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.fireString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityFire"
+            app:layout_constraintStart_toStartOf="@+id/affinityFire"
+            app:layout_constraintTop_toBottomOf="@+id/affinityFireImg" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.iceString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityIce"
+            app:layout_constraintStart_toStartOf="@+id/affinityIce"
+            app:layout_constraintTop_toBottomOf="@+id/affinityIceImg" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.zapString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityZap"
+            app:layout_constraintStart_toStartOf="@+id/affinityZap"
+            app:layout_constraintTop_toBottomOf="@+id/affinityZapImg" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.windString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityWind"
+            app:layout_constraintStart_toStartOf="@+id/affinityWind"
+            app:layout_constraintTop_toBottomOf="@+id/affinityWindImg" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.lightString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityLight"
+            app:layout_constraintStart_toStartOf="@+id/affinityLight"
+            app:layout_constraintTop_toBottomOf="@+id/affinityLightImg" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="28.5dp"
+            android:layout_height="29dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="@{demon.curseString}"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/affinityCurse"
+            app:layout_constraintStart_toStartOf="@+id/affinityCurse"
+            app:layout_constraintTop_toBottomOf="@+id/affinityCurseImg" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

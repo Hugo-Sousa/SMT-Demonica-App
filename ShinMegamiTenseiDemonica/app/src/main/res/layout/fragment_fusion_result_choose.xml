@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name ="resultDemon"
+            type ="dam_a46304.shinmegamitenseidemonica.entities.Demon"/>
+        <variable
+            name="vm"
+            type="dam_a46304.shinmegamitenseidemonica.ui.DemonDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".activities.FusionResultChoose">
+
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:text="Choose skills to inherit:"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/result"
+            android:layout_width="348dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42"
+            app:srcCompat="@drawable/round_btn" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/resultImage"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            app:paletteImage="@{resultDemon.imgURL}"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="415dp"
+            app:layout_constraintTop_toTopOf="@+id/result"
+            app:layout_constraintBottom_toBottomOf="@+id/result"
+            app:layout_constraintStart_toStartOf="@+id/result"/>
+
+        <TextView
+            android:id="@+id/resultName"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="@{resultDemon.name}"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/result"
+            app:layout_constraintStart_toEndOf="@+id/resultImage"
+            app:layout_constraintTop_toTopOf="@+id/result"
+            app:layout_constraintBottom_toBottomOf="@+id/result"
+            tools:layout_editor_absoluteY="416dp" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:text="Skills:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="371dp"
+            android:layout_height="243dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/demonskills"
+            android:layout_width="371dp"
+            android:layout_height="243dp"
+            android:padding="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:spanCount="1"
+            tools:listitem="@layout/skill_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:text="Transferable Skills:"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="371dp"
+            android:layout_height="243dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/demonskillsTrans"
+            android:layout_width="371dp"
+            android:layout_height="243dp"
+            android:padding="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:spanCount="1"
+            tools:listitem="@layout/skill_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chooseFusebtn"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginEnd="153dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_btn"
+            android:fontFamily="@font/rhodium_libre"
+            android:text="Fuse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

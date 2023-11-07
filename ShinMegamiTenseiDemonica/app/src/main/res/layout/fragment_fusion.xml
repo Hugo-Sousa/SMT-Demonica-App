@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name ="demon1"
+            type ="dam_a46304.shinmegamitenseidemonica.entities.Demon"/>
+        <variable
+            name ="demon2"
+            type ="dam_a46304.shinmegamitenseidemonica.entities.Demon"/>
+        <variable
+            name ="resultDemon"
+            type ="dam_a46304.shinmegamitenseidemonica.entities.Demon"/>
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.fusion">
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="341dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="34dp"
+        android:fontFamily="@font/rhodium_libre"
+        android:gravity="center"
+        android:text="Cathedral Of Shadows"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.skydoves.transformationlayout.TransformationLayout
+        android:id="@+id/transformationLayout"
+        android:layout_width="133dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toStartOf="@+id/separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/btnBackground"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/btnBackground"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/separator"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="102dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="?attr/selectableItemBackground"
+                tools:ignore="UnusedAttribute">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/fusename1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#271422"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@{demon1.name}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Demon" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imagefuse1"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:cropToPadding="false"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:paletteCard="@{cardView}"
+                    app:paletteImage="@{demon1.imgURL}" />
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.skydoves.transformationlayout.TransformationLayout>
+
+    <com.skydoves.transformationlayout.TransformationLayout
+        android:id="@+id/transformationLayout2"
+        android:layout_width="133dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/separator"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/btnBackground"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/btnBackground"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/separator"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="102dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="?attr/selectableItemBackground"
+                tools:ignore="UnusedAttribute">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/fusename2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#271422"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@{demon2.name}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Demon" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imagefuse2"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:cropToPadding="false"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:paletteCard="@{cardView}"
+                    app:paletteImage="@{demon2.imgURL}" />
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.skydoves.transformationlayout.TransformationLayout>
+
+    <ImageView
+        android:id="@+id/separator"
+        android:layout_width="2dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="76dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/transformationLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        app:srcCompat="@drawable/round_img" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="11dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/searchResultbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fusionChartbtn"
+        app:srcCompat="@drawable/round_img" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="168dp"
+        android:fontFamily="@font/rhodium_libre"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/separator" />
+
+
+
+    <ImageView
+        android:id="@+id/result"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:srcCompat="@drawable/round_btn" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/resultImage"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        app:paletteImage="@{resultDemon.imgURL}"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="415dp"
+        app:layout_constraintTop_toTopOf="@+id/result"
+        app:layout_constraintBottom_toBottomOf="@+id/result"
+        app:layout_constraintStart_toStartOf="@+id/result"/>
+
+    <TextView
+        android:id="@+id/resultName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/rhodium_libre"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="@{resultDemon.name}"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/result"
+        app:layout_constraintStart_toEndOf="@+id/resultImage"
+        app:layout_constraintTop_toTopOf="@+id/result"
+        app:layout_constraintBottom_toBottomOf="@+id/result"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/stockbtn"
+        android:layout_width="356dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/round_btn"
+        android:fontFamily="@font/rhodium_libre"
+        android:text="Demon Stock"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fusionChartbtn"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/rhodium_libre"
+        android:paddingStart="10dp"
+        android:text="Fusion Chart"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchResultbtn"
+        android:layout_width="347dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/rhodium_libre"
+        android:paddingStart="10dp"
+        android:text="Search By Result"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/stockbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

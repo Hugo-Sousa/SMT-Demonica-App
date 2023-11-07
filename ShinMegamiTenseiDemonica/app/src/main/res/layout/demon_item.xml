@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name ="clickListener"
+            type ="android.view.View.OnClickListener"/>
+        <variable
+            name ="demon"
+            type ="dam_a46304.shinmegamitenseidemonica.entities.Demon"/>
+    </data>
+    <com.skydoves.transformationlayout.TransformationLayout
+        android:id ="@+id/transformationLayout"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+        app:transformation_duration ="550">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="6dp"
+            android:background="@color/btnBackground"
+            android:foreground="?attr/selectableItemBackground"
+            android:onClick="@{ clickListener }"
+            app:cardBackgroundColor="@color/btnBackground"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="?attr/selectableItemBackground"
+                tools:ignore="UnusedAttribute">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#271422"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@{demon.name}"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Demon" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/white"
+                    android:cropToPadding="false"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:paletteCard="@{cardView}"
+                    app:paletteImage="@{demon.imgURL}" />
+                />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.skydoves.transformationlayout.TransformationLayout>
+</layout>

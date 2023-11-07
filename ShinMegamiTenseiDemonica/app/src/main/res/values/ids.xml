@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="affinityPhys" type="id"/>
+    <item name="affinityGun" type="id" />
+    <item name="affinityFire" type="id" />
+    <item name="affinityIce" type="id" />
+    <item name="affinityZap" type="id" />
+    <item name="affinityWind" type="id" />
+    <item name="affinityLight" type="id" />
+    <item name="affinityCurse" type="id" />
+</resources>

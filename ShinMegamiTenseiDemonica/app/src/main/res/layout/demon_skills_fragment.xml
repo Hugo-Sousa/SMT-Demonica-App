@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.demon_skills">
+
+    <data>
+        <import type="dam_a46304.shinmegamitenseidemonica.entities.DemonDao"/>
+        <variable
+            name="demon"
+            type="dam_a46304.shinmegamitenseidemonica.entities.Demon"/>
+        <variable
+            name="vm"
+            type="dam_a46304.shinmegamitenseidemonica.ui.DemonDetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="242dp"
+            android:fontFamily="@font/rhodium_libre"
+            android:text="Stats / Skills"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="378dp"
+            android:layout_height="317dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/demonskills"
+            android:layout_width="378dp"
+            android:layout_height="317dp"
+            android:padding="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:spanCount="1"
+            tools:listitem="@layout/skill_item"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/stat"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/stat"
+            app:layout_constraintEnd_toEndOf="@+id/stat"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/stat"
+            app:layout_constraintTop_toTopOf="@+id/stat"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="HP:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+            app:layout_constraintEnd_toEndOf="@+id/imageView13"
+            app:layout_constraintStart_toStartOf="@+id/stat"
+            app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+        <ImageView
+            android:id="@+id/statMP"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/statMP"
+            app:layout_constraintEnd_toEndOf="@+id/statMP"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/statMP"
+            app:layout_constraintTop_toTopOf="@+id/statMP"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="MP:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintEnd_toEndOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="@+id/statMP"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <ImageView
+            android:id="@+id/statST"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/statST"
+            app:layout_constraintEnd_toEndOf="@+id/statST"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/statST"
+            app:layout_constraintTop_toTopOf="@+id/statST"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="ST:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView15"
+            app:layout_constraintEnd_toEndOf="@+id/imageView15"
+            app:layout_constraintStart_toStartOf="@+id/statST"
+            app:layout_constraintTop_toTopOf="@+id/imageView15" />
+
+        <ImageView
+            android:id="@+id/statMA"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/statMA"
+            app:layout_constraintEnd_toEndOf="@+id/statMA"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/statMA"
+            app:layout_constraintTop_toTopOf="@+id/statMA"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="MA:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+            app:layout_constraintEnd_toEndOf="@+id/imageView16"
+            app:layout_constraintStart_toStartOf="@+id/statMA"
+            app:layout_constraintTop_toTopOf="@+id/imageView16" />
+
+        <ImageView
+            android:id="@+id/statVI"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="170dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/statVI"
+            app:layout_constraintEnd_toEndOf="@+id/statVI"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/statVI"
+            app:layout_constraintTop_toTopOf="@+id/statVI"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="VI:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+            app:layout_constraintEnd_toEndOf="@+id/imageView17"
+            app:layout_constraintStart_toStartOf="@+id/statVI"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <ImageView
+            android:id="@+id/statAG"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/statAG"
+            app:layout_constraintEnd_toEndOf="@+id/statAG"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/statAG"
+            app:layout_constraintTop_toTopOf="@+id/statAG"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rhodium_libre"
+            android:gravity="center"
+            android:text="AG:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+            app:layout_constraintEnd_toEndOf="@+id/imageView18"
+            app:layout_constraintStart_toStartOf="@+id/statAG"
+            app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+        <ImageView
+            android:id="@+id/statLU"
+            android:layout_width="117dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/round_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="68dp"
+            android:layout_height="30dp"
+            android:src="@drawable/stat_label"
+            app:layout_constraintBottom_toBottomOf="@+id/statLU"
+            app:layout_constraintEnd_toEndOf="@+id/statLU"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/statLU"
+            app:layout_constraintTop_toTopOf="@+id/statLU"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rhodium_libre"
+            android:text="LU:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+            app:layout_constraintEnd_toEndOf="@+id/imageView19"
+            app:layout_constraintStart_toStartOf="@+id/stat"
+            app:layout_constraintTop_toTopOf="@+id/imageView19"
+            android:gravity="center" />
+
+        <com.skydoves.progressview.ProgressView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="14dp"
+            app:progressView_progress="@{demon.HP}"
+            app:progressView_colorProgress="@color/statbarclr"
+            app:progressView_max="1000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stat"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        </com.skydoves.progressview.ProgressView>
+
+        <com.skydoves.progressview.ProgressView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="54dp"
+            app:progressView_progress="@{demon.MP}"
+            app:progressView_colorProgress="@color/statbarclr"
+            app:progressView_max="1000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/statMP"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        </com.skydoves.progressview.ProgressView>
+
+        <com.skydoves.progressview.ProgressView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="94dp"
+            app:progressView_progress="@{demon.ST}"
+            app:progressView_colorProgress="@color/statbarclr"
+            app:progressView_max="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/statST"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        </com.skydoves.progressview.ProgressView>
+
+        <com.skydoves.progressview.ProgressView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="134dp"
+            app:progressView_progress="@{demon.MA}"
+            app:progressView_colorProgress="@color/statbarclr"
+            app:progressView_max="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/statMA"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        </com.skydoves.progressview.ProgressView>
+
+        <com.skydoves.progressview.ProgressView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="174dp"
+            app:progressView_progress="@{demon.VI}"
+            app:progressView_colorProgress="@color/statbarclr"
+            app:progressView_max="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/statVI"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        </com.skydoves.progressview.ProgressView>
+
+        <com.skydoves.progressview.ProgressView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="214dp"
+            app:progressView_progress="@{demon.AG}"
+            app:progressView_colorProgress="@color/statbarclr"
+            app:progressView_max="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/statAG"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        </com.skydoves.progressview.ProgressView>
+
+        <com.skydoves.progressview.ProgressView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="254dp"
+            app:progressView_progress="@{demon.LU}"
+            app:progressView_colorProgress="@color/statbarclr"
+            app:progressView_max="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/statLU"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        </com.skydoves.progressview.ProgressView>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{demon.HPString}"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/stat"
+            app:layout_constraintEnd_toEndOf="@id/stat"
+            app:layout_constraintStart_toStartOf="@id/stat"
+            app:layout_constraintTop_toTopOf="@id/stat"
+            tools:text="87" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{demon.MAString}"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/statMA"
+            app:layout_constraintEnd_toEndOf="@id/statMA"
+            app:layout_constraintStart_toStartOf="@id/statMA"
+            app:layout_constraintTop_toTopOf="@id/statMA"
+            tools:text="87" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{demon.STString}"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/statST"
+            app:layout_constraintEnd_toEndOf="@id/statST"
+            app:layout_constraintStart_toStartOf="@id/statST"
+            app:layout_constraintTop_toTopOf="@id/statST"
+            tools:text="87" />
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{demon.MPString}"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/statMP"
+            app:layout_constraintEnd_toEndOf="@id/statMP"
+            app:layout_constraintStart_toStartOf="@id/statMP"
+            app:layout_constraintTop_toTopOf="@id/statMP"
+            tools:text="87" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{demon.VIString}"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/statVI"
+            app:layout_constraintEnd_toEndOf="@id/statVI"
+            app:layout_constraintStart_toStartOf="@id/statVI"
+            app:layout_constraintTop_toTopOf="@id/statVI"
+            tools:text="87" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{demon.AGString}"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/statAG"
+            app:layout_constraintEnd_toEndOf="@id/statAG"
+            app:layout_constraintStart_toStartOf="@id/statAG"
+            app:layout_constraintTop_toTopOf="@id/statAG"
+            tools:text="87" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:fontFamily="@font/roboto"
+            android:text="@{demon.LUString}"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/statLU"
+            app:layout_constraintEnd_toEndOf="@id/statLU"
+            app:layout_constraintStart_toStartOf="@id/statLU"
+            app:layout_constraintTop_toTopOf="@id/statLU"
+            tools:text="87" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

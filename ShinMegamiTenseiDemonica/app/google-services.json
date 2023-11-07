@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "167999891300",
+    "firebase_url": "https://smt-dem-default-rtdb.firebaseio.com",
+    "project_id": "smt-dem",
+    "storage_bucket": "smt-dem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167999891300:android:358b025f86cba5da83fc71",
+        "android_client_info": {
+          "package_name": "dam_a46304.shinmegamitenseidemonica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167999891300-vsjra3vd3j0ils7hm36hdugb77niql75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dam_a46304.shinmegamitenseidemonica",
+            "certificate_hash": "873d4925bb7ddd1bceee43bec8661ee5ffed6c08"
+          }
+        },
+        {
+          "client_id": "167999891300-tq2e4hp8kdna6c83kvklonr39mdom441.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOaTRnp-ofCLUV4A0a1HQwDNzdT4gTeAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167999891300-tq2e4hp8kdna6c83kvklonr39mdom441.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

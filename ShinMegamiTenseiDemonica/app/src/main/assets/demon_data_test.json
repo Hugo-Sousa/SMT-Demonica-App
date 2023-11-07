@@ -1,0 +1,365 @@
+[
+  {
+    "name":"Alciel",
+    "align":"Dark-Law",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Alciel?file=Aciel.jpg",
+    "attack":{
+      "target":"all foes"
+    },
+    "code":79,
+    "inherits":"---------------",
+    "lvl":61,
+    "pcoeff":18,
+    "race":"Vile",
+    "resists":"ww-s-swn",
+    "skills":[
+      "Hades Blast",
+      "Counter",
+      "Life Gain"
+    ],
+    "source":[
+      "Retaliate",
+      "Life Surge"
+    ],
+    "stats":[
+      511,
+      280,
+      43,
+      42,
+      40,
+      39,
+      39
+    ],
+    "origin":"\nAbrahamic Mythology\nMesopotamian Mythology",
+    "background":"According to Midrash ha-neʿelam (“The Mystical Midrash”), a work of medieval Jewish mysticism, Arsiel is the entity in charge of Gehenna. He confronts the righteous souls to prevent them from praying for the wicked. Elsewhere, this role of the prince of Gehenna is instead given to Ashmedai, Satan, Abaddon or Samael. While English translations of the Bible often treat Gehenna and Hell interchangeably, the concept has a distinct meaning in rabbinic literature and in kabbalah, closer to the notion of purgatory. Gehenna is a place where a soul resides briefly (at most for a year) and becomes aware of all own deeds, rather than one of eternal damnation.\n\nIn Praxis cabulae nigrae Doctoris Johannis Fausti, Magi celeberrimi, a book written in 1612, Aciel (Alciel) is one of seven \"planetary spirits,\" a concept present already in earlier writing related to the character of Faust.These spirits were regarded as servants of Lucifer, and the more famous Mepistopheles has his origin among them. In at least one similar Faustian text, Aciel was specifically identified as the demon associated with the sun."
+  },
+  {
+    "name":"Amon",
+    "ailments":"-----n---",
+    "align":"Dark-Chaos",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Amon?file=Amon+SJR.jpg",
+    "code":503,
+    "inherits":"---------------",
+    "lvl":80,
+    "pcoeff":37,
+    "race":"Tyrant",
+    "resists":"ssdw--nn",
+    "skills":[
+      "Makarakarn",
+      "Concentrate",
+      "Megido Flame"
+    ],
+    "source":[
+      "Trisagion",
+      "Charge",
+      "Concentrate"
+    ],
+    "stats":[
+      649,
+      361,
+      54,
+      54,
+      48,
+      56,
+      43
+    ],
+    "origin":"Abrahamic Mythology\nGoetia Demons\nEgyptian Mythology",
+    "background":"Amon (also spelled as Aamon or Nahum, along with many other variations) is a Great Marquis of Hell and the seventh of the 72 Goetic demons who governs forty infernal legions. He is also one of the four personal assistants of Astaroth.\n\nHe appears as a wolf with a snake's tail who can breathe fire, or as a man with dog's teeth who is situated inside of a raven, or as a raven-headed man. Collin de Plancy took the artistic liberty of compressing Amon's two forms into one with the head of a dog-teethed raven, the body of a wolf, and a snake tail in place of its back legs. At the command of a mage, Amon may take the shape of man with a raven's head, having teeth of a canine. He tells of all things past and future. According to the Grand Grimoire, he is a direct subordinate of Satanachia.\n\nHe procures love and reconciles controversies between friends and foes. Some demonologists have associated his name with the Egyptian god Amun or with the god Ba‘al Hammon of Carthage.\n\nAs Amaymon, also known as Amoymon or Amaimon, he is said to be a Prince of Hell who represents the sin of Wrath and King of either the West or East. Asmoday and sometimes Gaap are said to be his servants. A silver ring is required to be worn on the middle finger when summoning him, as his deadly breath will kill the summoner otherwise."
+  },
+  {
+    "name":"Anahita",
+    "ailments":"n--------",
+    "align":"Neutral-Law",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Anahita?file=AnahitaSJRedux.jpg",
+    "code":499,
+    "inherits":"---------------",
+    "lvl":28,
+    "pcoeff":28,
+    "race":"Nymph",
+    "resists":"--wd--n-",
+    "skills":[
+      "Hellish Spurt",
+      "Mediarama",
+      "Tarukaja"
+    ],
+    "source":[
+      "Mediarama",
+      "Recovery Amp",
+      "Tarukaja"
+    ],
+    "stats":[
+      253,
+      147,
+      18,
+      25,
+      20,
+      17,
+      19
+    ],
+    "origin":"\nZoroastrian Mythology\nPersian Mythology",
+    "background":"Anahita, also known as Aredvi Sura Anahita, is a lesser yazata from Zoroastrianism. She is identified with the Aban or the waters and is thus a river deity responsible for fertility. She was worshiped as part of those duties. She rode in a chariot driven by four horses and was benevolent to those who worshiped her and stern to those who did not. She was both the god of and the source of the world river.\n\nShe tended to be conflated with the Semitic goddess Ishtar or the Gathas Ashi."
+  },
+  {
+    "name":"Anat",
+    "align":"Light-Chaos",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Anat?file=Anat.png",
+    "code":374,
+    "inherits":"---------------",
+    "lvl":80,
+    "pcoeff":16,
+    "race":"Geist",
+    "resists":"s---rwnn",
+    "skills":[
+      "Ziodyne",
+      "Elec Amp"
+    ],
+    "source":[
+      "Luster Candy",
+      "Elec Amp",
+      "Repel Elec"
+    ],
+    "stats":[
+      652,
+      369,
+      48,
+      58,
+      49,
+      45,
+      55
+    ],
+    "origin":"\nCanaanite Mythology\nSemitic Mythology\nEgyptian Mythology",
+    "background":"Anat, also known as Anath, Anant, Anit, Anti, Anaitis, Anait, Anthat or Antit, is a western Semitic goddess of war and mistress of wild animals, also associated with love and sex. In mythical texts, she is famous for having a violent temperament and for taking joy in slaughter.\n\nIn the Baal Cycle texts, Anat appears as a war goddess, initially called upon by her father El alongside the craftsman god Kothar-wa-Khasis to set the stage for the coronation of Yam; Anat, however, favors Baal, who is called her brother in this myth; outside Ugarit Hadad's sister was Hebat, however, and unlike Baal, Anat is not called Dagon's descendant in Ugaritic texts. After the defeat of the sea god she helps Baal secure the support of Asherah and threatens her father to let Baal build his own palace. She is later described ritually re-enacting a battle, and then purifying herself in her temple, where she receives a message from Baal asking her to establish peace on terms favorable to him. In response, she lists various past adversaries she vanquished to confirm she is a suitable goddess for this task. In the second half of the epic, she avenges her brother by killing Mot and with the help of the sun goddess, Shapash, brings Baal back from the land of the dead. This myth might represent the cycle of seasons, a single catastrophic drought, or perhaps simply another purely mythical conflict over divine kingship.\n\nIn the tale of Aqhat, Anat desires to obtain the legendary bow of the eponymous hero. After he rejects her various offers and taunts the goddess, stating that women have no business using such weapons, Anat, with her father's permission, devises a plan which culminates in his death and destruction of the bow.\n\nOther Ugaritic texts, especially apotropaic formulas, usually pair Anat with Astarte, who shared many of her functions, and is also often assumed to be Baal's wife by researchers. In the Baal cycle, they only appear together once, preventing Baal from attacking Ym's messengers. Sometimes, she was also associated with Resheph, a Canaanite god similar to the Mesopotamian plague deity Nergal. Like Anat, Resheph was known for his violent disposition.\n\nHer worship was introduced to Egypt, where she was also associated with Astarte, and was additionally considered the consort of the god Set, during the late bronze age conflated by the Egyptians with Baal Hadad and with Hittite weather gods. Her sexual aspects led her to be associated with Min, who is a god of male fertility. She was one of Rameses II's patron deities, who according to the pharaoh, watched over him in battle. He even named one of his daughters Bint-Anat, or \"Daughter of Anat\" in her honor.\n\nDuring the period of Babylonian exile, among the Hebrew inhabitants of the island of Elephantine, she was known as Anat-Yahu, the wife of Yahu (God). This association seemingly wasn't known in any other areas, and unlike fellow Canaanite deities Baal, Astarte and Asherah, Anat is not present in the Bible in any meaningful capacity, though \"Shamgar, son of Anath\" is a ruler mentioned in the Book of Judges."
+  },
+  {
+    "name":"Armaiti",
+    "align":"Light-Law",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Armaiti?file=Armaiti.png",
+    "code":27,
+    "inherits":"---------------",
+    "lvl":76,
+    "pcoeff":22,
+    "race":"Herald",
+    "resists":"s-r---nn",
+    "skills":[
+      "Megidola",
+      "Diarahan",
+      "Tetrakarn"
+    ],
+    "source":[
+      "Laplace Curse",
+      "Void Expel",
+      "Megidolaon"
+    ],
+    "stats":[
+      631,
+      347,
+      51,
+      53,
+      50,
+      46,
+      43
+    ],
+    "origin":"\nZoroastrian Mythology",
+    "background":"Armaiti (\"beneficent devotion\") is one of the Amesha Spentas in Zoroastrianism. She is the personification of holy devotion, the daughter of the creator, Ahura Mazda, and represents righteous obedience. She is associated with the earth and in that capacity she is the goddess of fertility and the dead, who are buried in the earth. The fifth day of every month and the twelfth month are dedicated to her. Her eternal opponent is the archdemon of discontent, Nanghaithya."
+  },
+  {
+    "name":"Asura",
+    "align":"Dark-Chaos",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Asura?file=Asura.JPG",
+    "code":391,
+    "inherits":"oo------oooooo-",
+    "lvl":42,
+    "pcoeff":28,
+    "race":"Tyrant",
+    "resists":"--rw-rss",
+    "skills":[
+      "Black Flame",
+      "Binding Cry",
+      "Asura"
+    ],
+    "source":[
+      "Agidyne",
+      "Phys Boost",
+      "Fire Boost"
+    ],
+    "stats":[
+      370,
+      197,
+      28,
+      29,
+      31,
+      27,
+      26
+    ],
+    "origin":"\nHindu Mythology\nBuddhist Mythology\nZoroastrian Mythology\nVedic Mythology",
+    "background":"Asuras are entities that take on varying roles in the Asian religions. In the old Vedic religion, they were simply gods of moral/social phenomenon who regularly competed with the Devas, who were gods of natural phenomenon.\n\nIn Hinduism, they are fanatical, demon-like entities associated with carnal and materialistic pleasures, and often thirsted for violence, opposed to the more peace-inclined Devas. There are many kings and rulers of the Asura, but one major Asura Lord is based on Virocana, also known as Maha Vairocana or Dainichi Nyorai, the king of the asuras who, alongside Indra, searched for the secret of enlightenment.\n\nIn Buddhism, they are the lowest rank of deities and are jealous gods addicted to various malign passions, while said to be one of the four unhappy births, being representative of a human being incapable of peace and always angered with the world, while also seeking strife and violence. In Japanese Buddhism, they are demigods, or semi-blessed beings. Powerful protectors of Buddhism, yet fierce and quarrelsome, they are partly good and partly evil, like humans. Their realm is believed to be a world of strife said to be located on the ocean floor. Some say Ashura was an Indian royal who converted to Buddhism. In other traditions, Ashura was a sun goddess who was feared for bringing droughts. The leaders of the Asuras were called Asurinda or Asurendra (\"Asura Lord\"). The principal leaders are Vemacritin (also called Vepacitti), Rahu (also called Veroca, Verocana, or Virocana) and Paharada. The appearance of the Megami Tensei series' Asura is most likely based on the Japanese Buddhist depiction of the Asuras.\n\nHowever, in Zoroastrianism, Asura is known as Ahura, and are depicted as the forces of good, led by Ahura Mazda. In fact, the Indo-Iranians, the term asura (or in this case ahura) originally referred to divine beings on par with the gods. After the Aryans went their separate ways from the Iranians, the asuras came to be seen as rival gods, eventually even demonic. The struggle between the devas and the asuras possibly reflects the conflict between the tribes who worshiped a pantheon led by the god Indra and the tribes who worshiped the gods called the asuras."
+  },
+  {
+    "name":"Beelzebub",
+    "align":"Dark-Chaos",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Beelzebub?file=KazumaKaneko-Beelzebub.jpg",
+    "code":296,
+    "inherits":"---------------",
+    "lvl":99,
+    "pcoeff":43,
+    "race":"Tyrant",
+    "resists":"s-d-n-nn",
+    "skills":[
+      "Jihad",
+      "Mamudoon",
+      "Victory Cry"
+    ],
+    "source":[
+      "Jihad",
+      "Drain Phys",
+      "Victory Cry"
+    ],
+    "stats":[
+      802,
+      444,
+      67,
+      67,
+      61,
+      64,
+      58
+    ],
+    "origin":"\nAbrahamic Mythology",
+    "background":"The lord of the flies, Beelzebub was originally a Canaanite deity named Baal and was later explained to be one of the seven princes of Hell in Christian sources. He is also considered to be synonymous with Satan. In Judaism, he was a mockery of the religions surrounding them that worshipped Baal, and in Rabbinical texts the name Ba'al Zebub was a mockery of the religion of Baal. Some scholars believe the name Ba'al Zebub (\"Lord of the Flies\") was a way of referring to Baal as a pile of dung and his followers as flies, as well as a pun on Ba'al Zebul (\"Lord of the High Place\").\n\nIn Catholic demonology, he is sometimes considered to be one of the first three angels to fall from heaven, along with Lucifer and Leviathan. He is said to be one of the seven demon princes, and is often associated with pride, gluttony and the worship of false gods."
+  },
+  {
+    "name":"Belial",
+    "align":"Dark-Chaos",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Belial?file=Belial+DeSu.png",
+    "code":306,
+    "inherits":"---------------",
+    "lvl":99,
+    "pcoeff":42,
+    "race":"Tyrant",
+    "resists":"srrw--nn",
+    "skills":[
+      "Trisagion",
+      "Mamudoon",
+      "Occult Flash"
+    ],
+    "source":[
+      "Repel Phys",
+      "Trisagion",
+      "Occult Flash"
+    ],
+    "stats":[
+      814,
+      428,
+      68,
+      59,
+      65,
+      61,
+      59
+    ],
+    "origin":"\nAbrahamic Mythology\nGoetia Demons",
+    "background":"Belial, also known as Berial, Baalial, Balial, Belhor, Beliall, Beliar, Beliel or Beliya'al, is the 68th demonic spirit in the Ars Goetia and one of the four crowned princes of Hell ruling over the North. He is a mighty king and powerful king that was created next after Lucifer and is of his order. He appears in the form of a beautiful angel sitting in a chariot of fire and speaks with a comely voice.\n\nHis office is to distribute preferments of senatorships and to cause favor of friends or foes. He bestows excellent familiars and governs 80 legions of spirits. Whoever summons him must have offerings of gifts or sacrifices or he will not give true answers to their demands, but even then with those, he will not spend more than one hour on the truth unless constrained by divine power or his seal, to be worn as a lamin by the person who summons him.\n\nThe word means worthless in Hebrew, and later came to represent the personification of the devil. In the Old Testament of the Bible, the word tends to be used to describe a class of people, for instance the sons of Belial. In the Dead Sea Scrolls, the Angel of Light and the Angel of Darkness are mentioned. God is cited as the Angel of Light, and Belial the contrary. The demon was said to bring guilt and wickedness to man. The source also recounts a dream of Amram, the father of Moses, where Belial is described as the King of Evil or Prince of Darkness."
+  },
+  {
+    "name":"Black Rider",
+    "ailments":"nnnnnnnnn",
+    "align":"Dark-Neutral",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Black_Rider?file=BlackRider2.jpg",
+    "code":347,
+    "inherits":"--o--oo--o-oo--",
+    "lvl":69,
+    "pcoeff":21,
+    "race":"Fiend",
+    "resists":"--wd--nn",
+    "reslvls":{
+      "fir":100
+    },
+    "skills":[
+      "Glacial Blast",
+      "Megidola",
+      "Debilitate"
+    ],
+    "source":[
+      "Glacial Blast",
+      "Ice Amp",
+      "Mana Surge"
+    ],
+    "stats":[
+      559,
+      316,
+      43,
+      48,
+      40,
+      48,
+      43
+    ],
+    "origin":"Abrahamic Mythology",
+    "background":"\"When He broke the third seal, I heard the third living creature saying, “Come.” I looked, and behold, a black horse; and he who sat on it had a pair of scales in his hand. And I heard something like a voice in the center of the four living creatures saying, “A quart of wheat for a denarius, and three quarts of barley for a denarius; but do not damage the oil and the wine.\"\n—Revelation 6:5-6.\nThe Black Rider, or Black Horsemen, is the third of the Four Horsemen of the Apocalypse, riding a black horse, is popularly called Famine. The black color of the third horse symbolized death and famine, bearing a scale of famine. The rider rides onward, denying the world life-sustaining food and bringing starvation, but being ordered by divine law to not harm oil or wine. The rider is shown holding a scale, which represents scarcity of food, higher prices and famine, likely as a result of the wars caused by the red horseman. Food will be scarce, but luxuries such as wine and oil will still be readily available.\n\nThe \"a measure of wheat for a penny\" from the King James Version of the Bible might not sound like a famine to modern ears, but in the NIV we read \"a quart of wheat for a day's wages,\" which is a little clearer. While it's never identified as his own, it is implied that the voice John the Apostle hears coming from \"the third of the four living creatures\" comes from the Black Rider, making it the only horseman that actually vocalizes his intentions, the aforementioned raise in prices."
+  },
+  {
+    "name":"Cybele",
+    "align":"Light-Chaos",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Cybele?file=Cybele.png",
+    "attack":{
+      "ailment":"charm (10%)"
+    },
+    "code":230,
+    "hpmod":1.1,
+    "inherits":"---------------",
+    "lvl":76,
+    "pcoeff":16,
+    "race":"Lady",
+    "resists":"--dw-snn",
+    "skills":[
+      "Maragidyne",
+      "Fire Amp"
+    ],
+    "source":[
+      "Debilitate",
+      "Fire Amp",
+      "Drain Fire"
+    ],
+    "stats":[
+      646,
+      362,
+      49,
+      55,
+      50,
+      43,
+      46
+    ],
+    "origin":"\nGreco-Roman Mythology\nEuropean Mythology",
+    "background":"Cybele is the deity of Phrygia, a realm in ancient Anatolia, that represents the idea of a mother goddess, similar to Gaia of the Greeks. Cybele is also associated with various natural elements, including wildlife and vegetation. Wild cats in particular were often associated with her. It's possible she was derived from anearlier mostly Hittite goddess, Kubaba.\n\nIn Greece, Cybele was a protector of several city-states, one of which is Athens. Her most celebrated Greek rites and processions showed her as a foreign and exotic mystery-goddess. She arrives in a lion-drawn chariot to the accompaniment of wild music, wine and a disorderly, ecstatic following. She was unique among deities worshiped by the Greeks as she had a transgendered, or eunuch, priesthood. Many of her Greek cults included rites to a divine, castrated, Phrygian shepherd-consort known as Attis. She is associated with mountains, town and city walls, fertile nature and wild animals, namely lions.\n\nIn Rome she was known as Magna Mater, meaning Great Mother. They would reinvent her as a Trojan goddess, which made her a goddess ancestor of the Roman people by way of the Trojan prince Aeneas. With Rome's eventual dominance over the Mediterranean, a Roman version of Cybele's cult would spread throughout the entire empire."
+  },
+  {
+    "name":"Demeter",
+    "ailments":"ssssssss-",
+    "align":"Light-Law",
+    "imgURL": "https://megamitensei.fandom.com/wiki/Demeter?file=Demeter.png",
+    "code":505,
+    "inherits":"---------------",
+    "lvl":85,
+    "pcoeff":38,
+    "race":"Megami",
+    "resists":"s-w--dnn",
+    "skills":[
+      "Salvation",
+      "Samarecarm",
+      "Recarmdra"
+    ],
+    "source":[
+      "Salvation",
+      "Invitation",
+      "Mana Surge"
+    ],
+    "stats":[
+      685,
+      382,
+      51,
+      57,
+      50,
+      54,
+      58
+    ],
+    "origin":"\nGreco-Roman Mythology",
+    "background":"Demeter is the goddess of the harvest and agriculture in Greek Mythology. She is the daughter of Cronus and Rhea, who presided over grains and the fertility of the earth. Though Demeter is often described simply as the goddess of the harvest, she presided also over the sacred law. Demeter was intimately associated with the seasons.\n\nIt was believed that Demeter made the crops grow each year; thus the first loaf of bread made from the annual harvest was offered to her. She was the goddess of the earth, of agriculture, and of fertility in general. Sacred to her are livestock and agricultural products, poppy, narcissus and the crane. She is the mother of the Spring goddess Persephone.\n\nWhen Hades abducted and married her daughter Persephone to be his wife and queen in the Greek underworld, she punished the caretakers of Persephone into monsters. Then in a fit of anger and sorrow at her daughter's loss, Demeter laid a curse on the world that caused plants to wither and die, and the land to become desolate.\n\nZeus, alarmed for the barren earth, sought for Persephone's return. However, because she had eaten the pomegranate while in the underworld, Hades had a claim on her. Therefore, it was decreed that Persephone would spend four months each year in the underworld. During these months Demeter would grieve for her daughter's absence, withdrawing her gifts from the world, creating winter. Her return brought the spring."
+  }
+]

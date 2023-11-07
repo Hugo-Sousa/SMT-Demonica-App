@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/demon_detail_nav"
+    app:startDestination="@id/viewFragment">
+    <fragment
+        android:id="@+id/demon_background"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.demon_background"
+        android:label="demon_background_fragment"
+        tools:layout="@layout/demon_background_fragment" />
+    <fragment
+        android:id="@+id/demon_skills"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.demon_skills"
+        android:label="demon_skills_fragment"
+        tools:layout="@layout/demon_skills_fragment" />
+    <fragment
+        android:id="@+id/demon_main_screen"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.demon_main_screen"
+        android:label="fragment_demon_main_screen"
+        tools:layout="@layout/fragment_demon_main_screen" />
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="dam_a46304.shinmegamitenseidemonica.activities.ViewFragment"
+        android:label="fragment_view"
+        tools:layout="@layout/fragment_view" >
+        <action
+            android:id="@+id/action_viewFragment_to_demon_background"
+            app:destination="@id/demon_background" />
+        <action
+            android:id="@+id/action_viewFragment_to_demon_main_screen"
+            app:destination="@id/demon_main_screen" />
+        <action
+            android:id="@+id/action_viewFragment_to_demon_skills"
+            app:destination="@id/demon_skills" />
+    </fragment>
+</navigation>

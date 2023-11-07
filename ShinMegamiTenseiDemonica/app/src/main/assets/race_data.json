@@ -1,0 +1,248 @@
+[
+  {
+    "name": "Herald",
+    "alignment": "Light-Law",
+    "description": "Herald (大天使, Daitenshi)?, also known as Seraph (セラフ, Serafu)? and Hallel (熾天使, Shitenshi)? is the demon race of high ranking angels in the Judeo-Christian lore with few exceptions from Zoroastrianism. In gameplay, they usually do well in both physical and magical areas but they are focused on Magic, especially of the Expel (Light) and Almighty elements.\n\nThe original naming of this race, \"Seraph,\" is a misnomer due to the fact that except for Seraph itself, many demons included in this race are not of the rank of seraph, or inconsistently considered as seraph such as Michael. Most of the Judeo-Christian angels in this race are simply classified as \"Archangel.\"",
+    "results": ["-","Genma","Divine","Divine","Vile","Avian","Tree","Megami","-","-","-","Megami","Avian","Avian","Megami","Divine","Avatar","Deity","Flight","-","-","-","-","Reaper","Megami","Fury","-","-","Flight","Nymph","Yoma","-","-","-","Vile","-","Megami","Megami","Avatar","-","Megami"]
+  },
+  {
+    "name": "Megami",
+    "alignment": "Light-Law",
+    "description": "The Megami (女神) are literally Goddesses. They are usually the female counterpart of a head god of a pantheon (e.g.: Lakshmi being Vishnu's wife) or gods of love and fertility and are known for being kind deities. In gameplay, demons of the Megami Race are usually poor in physical combat (with the notable exception of Athena) but they excel in healing and offensive magic.\n\nThe race name of \"Megami\" is left untranslated in many English-localized games even though a straight English counterpart is available (with the exception being Shin Megami Tensei IMAGINE which was localized by Aeria Games instead of Atlus NA itself). This localization decision was probably made to pay homage to the series title \"Megami Tensei\" (Goddess Reincarnation). The title refers to Yumiko Shirasagi from Digital Devil Story: Megami Tensei for her former life as the goddess Izanami.\n\nThey were first considered a Light-Law race, but in Shin Megami Tensei II they were changed to Light-Neutral. Strangely enough, even though Megami are often the wives or female counterparts of male head deities, most of the time Megami is not the same alignment as Deity. Megami is more often Light-Law, even if the Deity race is Light-Neutral in the same game.",
+    "results": ["Genma","-","Nymph","Herald","Yoma","Divine","Nymph","Tree","-","-","-","Avatar","Deity","Avian","Tree","Wood","Fallen","Tree","Wood","-","-","-","-","Lady","Deity","Herald","Genma","Foul","Nymph","-","Nymph","-","-","-","Lady","-","Tree","Avatar","Fallen","-","Deity"]
+  },
+  {
+    "name": "Avian",
+    "alignment": "Light-Law",
+    "description": "Avian (霊鳥, Reichō, lit. \"Spiritual Bird\") is a race of demons in the Shin Megami Tensei series. It is the bird's version of Holy Beast and Godly Beast races. They are usually the god in bird's form or the sacred bird which brings good fortune. Garuda, the king of birds, is usually the top ranked Avian. The only exceptions are both installments of Devil Survivor which include this race with demons from the previously Flight (neutral) and Raptor (dark) races.",
+    "results": ["Divine","Nymph","-","Flight","Flight","Divine","Foul","Tree","-","-","-","Holy","Herald","Flight","Holy","Megami","Flight","Yoma","-","-","-","-","-","Herald","Fury","Avatar","Night","Raptor","Genma","Megami","Raptor","-","-","-","Raptor","-","Holy","Holy","Flight","-","Fury"]
+  },
+  {
+    "name": "Tree",
+    "alignment": "Light-Law",
+    "description": "Tree (神樹, Shinju, lit. \"Divine Tree\") is a race of demons in the Megami Tensei series.",
+    "results": ["Divine","Herald","Flight","-","Herald","Avian","Genma","Megami","-","-","-","Yoma","Nymph","Beast","Fairy","Genma","Avatar","Fairy","Flight","-","-","-","-","-","Dragon","Snake","Jirae","Vile","Jirae","Lady","Yoma","-","-","-","Wood","-","Fairy","Yoma","Avatar","-","Dragon"]
+  },
+  {
+    "name": "Divine",
+    "alignment": "Neutral-Law",
+    "description": "The Divines (天使, Tenshi)? are the various ranks of Angels in Judeo-Christian lore. Their ranking is mostly based on the Christian angelic hierarchy. Unlike the Heralds, they are for the most part nameless. In gameplay, they can be good with either physical attacks or magic. However, they all carry at least one Light elemental spell, a resistance to Light and usually a weakness to Darkness. They were first considered Light-Law but they were later changed to Neutral-Law.",
+    "results": ["Vile","Yoma","Flight","Herald","-","Avian","Flight","Megami","Raptor","-","Raptor","Herald","Fairy","Avatar","Nymph","Nymph","Holy","Fallen","Vermin","Vile","Raptor","Drake","Raptor","Fallen","Foul","Drake","Snake","-","Jirae","Nymph","Megami","Raptor","Raptor","Jaki","Fallen","Jaki","Vile","Herald","Holy","Vile","Foul"]
+  },
+  {
+    "name": "Flight",
+    "alignment": "Neutral-Law",
+    "description": "Flight or Wild Bird (妖鳥, Yōchō)? is a race of demons in the Shin Megami Tensei series. It is the bird's version of the neutral Beast race and includes the lower ranked mythical birds from various mythologies. The prominent example of this race is the Greek Harpy.",
+    "results": ["Avian","Divine","Divine","Avian","Avian","-","Nymph","Avian","Raptor","Vermin","Raptor","Herald","Vermin","Avatar","Avatar","Divine","Yoma","Raptor","Beast","Spirit","Foul","Raptor","Raptor","Fallen","Night","-","Avian","Divine","Beast","Beast","Fallen","Drake","Foul","Raptor","Snake","Raptor","Spirit","Herald","Yoma","Spirit","Night"]
+  },
+  {
+    "name": "Yoma",
+    "alignment": "Neutral-Law",
+    "description": "Yoma (妖魔, Youma)? is a race of demons in the Shin Megami Tensei series. Most of them are the messengers of a god, and are a neutral counterpart of the Divine race.",
+    "results": ["Tree","Nymph","Foul","Genma","Flight","Nymph","-","Fairy","Jaki","Wood","Drake","Fairy","Jirae","Snake","Night","Divine","Avatar","Lady","Flight","Haunt","Vermin","Haunt","Wilder","Night","Haunt","Genma","Tyrant","Snake","Jaki","Haunt","Jirae","Jaki","Vermin","Haunt","Night","-","Haunt","Fairy","Avatar","Haunt","Haunt"]
+  },
+  {
+    "name": "Nymph",
+    "alignment": "Neutral-Law",
+    "description": "Nymph (天女, Ten'nyo, Heaven Maid) is a race of demons introduced in Shin Megami Tensei: Strange Journey. It act as an intermediate class of Megami and Yoma races. This race is not yet officially placed under any species due to its late introduction to the series. All Nymphs are Neutral-Law aligned.",
+    "results": ["Megami","Tree","Tree","Megami","Megami","Avian","Fairy","-","Foul","Haunt","Raptor","Femme","Fairy","Divine","Megami","Megami","Avatar","Holy","Wood","Spirit","-","Haunt","-","Femme","-","Lady","Divine","Avatar","Femme","-","Femme","Jaki","-","Haunt","Femme","Spirit","Spirit","Femme","Avatar","Spirit","-"]
+  },
+  {
+    "name": "Vile",
+    "alignment": "Dark-Law",
+    "description": "The Vile demons, known as Wicked Gods (邪神, jashin)? in Japan, are the major deities who are associated with disease, famine and other disasters brought upon mankind. They embody heterodoxy and are often vanquished or fallen gods that have become vilified by rival religions. They are a brutish race, focusing mainly on physical attacks, and are tied with the Tyrant for the most powerful dark race and easily on par with any demons of light.",
+    "results": ["-","-","-","-","Raptor","Raptor","Jaki","Foul","-","Drake","Jaki","-","-","-","-","Jaki","Wilder","Jaki","Drake","Tyrant","Raptor","Haunt","Raptor","-","-","-","-","Raptor","Jaki","Jaki","Jaki","Reaper","Wilder","Haunt","Tyrant","Raptor","Tyrant","-","Wilder","Tyrant","-"]
+  },
+  {
+    "name": "Raptor",
+    "alignment": "Dark-Law",
+    "description": "Raptor - known in Japan as Ferocious Birds (凶鳥, Kyōchō) - is a race of demons in the Shin Megami Tensei series. They are made up mostly of demon birds that are bringers of ill-omens or disasters to humanity. They often abduct humans to eat their souls or turn them into more of their kind.",
+    "results": ["-","-","-","-","-","Vermin","Wood","Haunt","Drake","-","Vile","-","-","-","-","Wood","Vermin","Foul","Vermin","Spirit","Vermin","-","Spirit","-","-","-","-","Drake","Haunt","Wood","Wood","Vermin","Vermin","Wilder","Avian","Wilder","Spirit","-","Vermin","Spirit","-"]
+  },
+  {
+    "name": "Wood",
+    "alignment": "Dark-Law",
+    "description": "Wood (妖樹, Yōju, lit. \"Mystic Tree\") is a race of demons in the Megami Tensei series. They are very similar to the Drakes in that they are constantly afflicted with an all-consuming hunger. They will attack and kill anything and everything in order to consume it in a vain attempt at satiation.\n\nWood is only Dark-Neutral in Shin Megami Tensei II and Shin Megami Tensei If.... The subsequent titles place this race in Dark-Law alignment. Also it is only under the Elementals species in Shin Megami Tensei II and subsequently under the Vegetation species.",
+    "results": ["-","-","-","-","Raptor","Raptor","Drake","Raptor","Jaki","Vile","-","-","-","-","-","Haunt","Wilder","Vermin","Drake","Spirit","Raptor","Raptor","Spirit","-","-","-","-","-","Raptor","Raptor","Foul","Drake","Raptor","Raptor","Tree","Reaper","Spirit","-","Wilder","Spirit","-"]
+  },
+  {
+    "name": "Deity",
+    "alignment": "Light-Neutral",
+    "description": "The Deity, known in Japan as Demon God (魔神 Majin) or Divinity (神性 Shinsei) is one of the most powerful races in the Shin Megami Tensei series, and is generally more difficult to fuse than most other races. They tend to be well-rounded demons, capable of using high level physical and magical attacks. In the real world, they are the chief deities of their pantheons; generally the lord of other gods and are associated with maintenance or creation.\n\nThey are generally either Light-Law or Light-Neutral. They first appeared as the former, but newer tendencies vary towards the latter. In the Devil Summoner series they are Light-Law.",
+    "results": ["Megami","Avatar","Holy","Yoma","Herald","Herald","Fairy","Femme","-","-","-","-","Genma","Avatar","Reaper","Genma","Holy","Brute","Beast","-","-","-","-","Lady","Holy","Lady","Fury","Fury","Jirae","Snake","Yoma","-","-","-","Reaper","-","Reaper","-","Holy","-","Holy"]
+  },
+  {
+    "name": "Avatar",
+    "alignment": "Light-Neutral",
+    "description": "Avatar or Godly Beast (神獣, Shinjū)? is a race of demons in the Shin Megami Tensei series. They are very powerful gods that have the form of beasts or animals. They are strong and fierce, and dedicated to rooting out and destroying evil. Unlike the Holy Beast race, Godly Beasts are usually the god's avatar in the bestial form rather than the subordinate animal associates with the god itself.",
+    "results": ["Avian","Deity","Herald","Nymph","Fairy","Vermin","Jirae","Fairy","-","-","-","Genma","-","Beast","Deity","Kishin","Avian","Tree","Dragon","-","-","-","-","Dragon","Tree","Fury","Dragon","Snake","Holy","Holy","Beast","-","-","-","Wilder","-","Deity","Genma","Avian","-","Tree"]
+  },
+  {
+    "name": "Holy",
+    "alignment": "Light-Neutral",
+    "description": "The Holy or Holy Beast (聖獣, Seijuu) is a race of demons based on supernatural creatures that are revered as sacred animals associated with or mount of the gods. In the series, they are of the \"Light\" alignment, although they may swing between being of \"Law\" or \"Neutral.\" This race usually coexists with the Avatar / Godly Beast race in most installments. In Devil Survivor, the Holy race is absent and many of its demons were transferred to Avatar.",
+    "results": ["Avian","Avian","Flight","Beast","Avatar","Avatar","Snake","Divine","-","-","-","Avatar","Beast","-","Fairy","Beast","Avian","Spirit","Dragon","-","-","-","-","Snake","Deity","Tree","Brute","Beast","Jaki","Jirae","Jirae","-","-","-","Vermin","-","Fairy","Avatar","Avian","-","Deity"]
+  },
+  {
+    "name": "Genma",
+    "alignment": "Light-Neutral",
+    "description": "Genma (幻魔, lit. Illusion Demon) or Demigod is a race of demons in the Shin Megami Tensei series. Other than Demigods, this race contains important benevolent and protective gods with human-like form, like Beldr, Tlaloc or Yarilo. This race is usually viewed as the \"upper\" counterpart of the Yoma race as hinted by some of the demons swaying between these two races throughout the series, or some of the Genma demons evolved from other Yoma demons, such as Ganesha.",
+    "results": ["Megami","Tree","Holy","Fairy","Nymph","Avatar","Night","Megami","-","-","-","Reaper","Deity","Fairy","-","Deity","Holy","Reaper","Avatar","-","-","-","-","Kishin","Kishin","Night","Brute","Holy","Kishin","Kishin","Brute","-","-","-","Haunt","-","Deity","Reaper","Holy","-","Kishin"]
+  },
+  {
+    "name": "Fairy",
+    "alignment": "Neutral-Neutral",
+    "description": "Fairies (妖精, Yōsei)?, are a common race in the Shin Megami Tensei series, though they are not particularly powerful. Most are magic-oriented and are generally the first kind of demons encountered in the game. In the real world, fairies are mischief-loving creatures. They do not have a particular preference towards good or evil and are chiefly concerned with doing as they please and having fun.\n\nOf particular note is that several fan-favorite and iconic demons are part of this family, including Pixie, Jack Frost and Pyro Jack.",
+    "results": ["Divine","Wood","Megami","Genma","Nymph","Divine","Divine","Megami","Jaki","Wood","Haunt","Genma","Kishin","Beast","Deity","-","Flight","Night","Avian","Spirit","Wood","Haunt","Wood","Deity","Genma","Night","Tree","Night","Femme","Lady","Brute","Haunt","Wood","Haunt","Jirae","Wood","Spirit","Genma","Flight","Spirit","Genma"]
+  },
+  {
+    "name": "Beast",
+    "alignment": "Neutral-Neutral",
+    "description": "Beast (魔獣, Majū, lit. \"Demon Beast\") is a race of demons in the series. This race contains mythical animals from various legends that are neither considered sacred nor evil but retain more naturally bestial behaviors. For the most part their alignment is Neutral-Neutral. Cerberus and Nekomata are the most recurring demons from this race in the entire series and both play some roles in the plots occasionally.",
+    "results": ["Avatar","Fallen","Flight","Avatar","Holy","Yoma","Avatar","Avatar","Wilder","Vermin","Wilder","Holy","Avian","Avian","Holy","Flight","-","Yoma","Wilder","Spirit","Vermit","Wilder","Wilder","Snake","Snake","Wilder","Holy","Snake","Snake","Holy","Jirae","Wilder","Foul","Wilder","Flight","Wilder","Spirit","Holy","-","Spirit","Snake"]
+  },
+  {
+    "name": "Jirae",
+    "alignment": "Neutral-Neutral",
+    "description": "Jirae (Anglicised from the Japanese name, Chirei, 地霊) or Earth Spirit is a recurring race of demons in the series. Similar to the Fairy race, Jirae demons are not interested in the conflict of power but more devoted to protecting the earth (or its resources) they inhabit from humans' construction and pollution.",
+    "results": ["Deity","Tree","Yoma","Fairy","Fallen","Raptor","Lady","Holy","Jaki","Foul","Vermin","Brute","Tree","Spirit","Reaper","Night","Yoma","-","Fallen","Spirit","Wood","Haunt","Foul","Brute","Kishin","Lady","Tree","Dragon","Fairy","Brute","Fairy","Jaki","Wilder","Jaki","Fairy","Jaki","Spirit","Brute","Yoma","Spirit","Kishin"]
+  },
+  {
+    "name": "Snake",
+    "alignment": "Neutral-Neutral",
+    "description": "Snake or Dragon King (竜王 or 龍王, Ryūō, Dragon King) is a race of demons in the series. Members of this clan are serpent-like or humanoids dragons. Their roles in mythology is being a kind of hybrid creatures.",
+    "results": ["Flight","Wood","-","Flight","Vermin","Beast","Flight","Wood","Drake","Vermin","Drake","Beast","Dragon","Dragon","Avatar","Avian","Wilder","Fallen","-","Spirit","Drake","Drake","Drake","Dragon","Femme","Fallen","Dragon","Dragon","Dragon","Drake","Yoma","Drake","Vermin","Drake","Beast","Wood","Spirit","Beast","Wilder","Spirit","Femme"]
+  },
+  {
+    "name": "Reaper",
+    "alignment": "Dark-Neutral",
+    "description": "Reaper (死神, Shinigami)? is a race of demons in the Megami Tensei series. The race is comprised by various incarnations of death gods of several cultures, or psychopomps.",
+    "results": ["-","-","-","-","Vile","Spirit","Haunt","Spirit","Tyrant","Spirit","Spirit","-","-","-","-","Spirit","Spirit","Spirit","Spirit","-","Spirit","Haunt","Spirit","-","-","-","-","Tyrant","Spirit","Spirit","Haunt","Vile","Spirit","Wood","Vile","Spirit","Vile","-","Spirit","-","-"]
+  },
+  {
+    "name": "Wilder",
+    "alignment": "Dark-Neutral",
+    "description": "Wilder (妖獣, Yōjū, lit. \"Mythical Beast\") is a race of demons in the Megami Tensei series. This race represents the Dark aspect of the beast species. All animals in this category are often described extremely evil, disastrous or ferocious in their respective legends.",
+    "results": ["-","-","-","-","Raptor","Foul","Vermin","-","Raptor","Vermin","Raptor","-","-","-","-","Wood","Vermin","Wood","Drake","Spirit","-","Drake","Spirit","-","-","-","-","Raptor","Jaki","-","Vermin","Drake","Wood","Drake","Holy","Wood","Spirit","-","Vermin","Spirit","-"]
+  },
+  {
+    "name": "Jaki",
+    "alignment": "Dark-Neutral",
+    "description": "Jaki (邪鬼, lit. \"Evil Demon\" or \"Wicked Ogre\") is a race of demons in the Shin Megami Tensei series. Jakis are man-eating creatures from various folklores. It is the Dark counterpart of the Brute race and also considered a lower case of the Vile clan.",
+    "results": ["-","-","-","-","Drake","Raptor","Haunt","Haunt","Haunt","-","Raptor","-","-","-","-","Haunt","Wilder","Haunt","Drake","Haunt","Drake","-","Wilder","-","-","-","-","Drake","Foul","Haunt","Haunt","Drake","Tyrant","Haunt","Kishin","-","Haunt","-","Wilder","Haunt","-"]
+  },
+  {
+    "name": "Vermin",
+    "alignment": "Dark-Neutral",
+    "description": "Vermin (幽虫 Yūmushi, lit. \"Ghostly Bug\" or 妖虫 Yōchū, lit. \"Mystic Bug\") is a race of demons in the series. These monsters are basically insect-like demons from popular folklores. They have the same characteristics of the Haunt race, but they are commonly associated with the Wood race.",
+    "results": ["-","-","-","-","Raptor","Raptor","Wilder","-","Raptor","Spirit","Spirit","-","-","-","-","Wood","Wilder","Foul","Drake","Spirit","Spirit","Wilder","-","-","-","-","-","Raptor","Wilder","-","Raptor","Raptor","Spirit","Wood","Avatar","Wood","Spirit","-","Wilder","Spirit","-"]
+  },
+  {
+    "name": "Fury",
+    "alignment": "Light-Chaos",
+    "description": "The Fury, Destroyer, or Omega, known as Destruction God (破壊神, Hakaishin)? in Japan are gods of wrath and destruction. The objective of this destruction can vary, however it's usually in preparation for the upcoming rebirth of the world. In the Megaten series, they're all bruisers, focused on dealing out heavy amounts of physical damage, though they fall short in other areas. Like Deities, they are somewhat difficult to fuse.\n\nBefore Shin Megami Tensei II, demons of Tenma race share the similar mythological role with Hakaishin, except that all Tenma demons are originated from Hindu or Asian pantheons. Shiva and Seiten Taisei (Wu Kong) are the remaining demons transferred from Tenma to Hakaishin race and still actively recurring throughout the series.",
+    "results": ["Reaper","Lady","Herald","-","Fallen","Fallen","Night","Femme","-","-","-","Lady","Dragon","Snake","Kishin","Deity","Snake","Brute","Dragon","-","-","-","-","-","Kishin","Fallen","Fallen","Tyrant","-","Lady","Jirae","-","-","-","Tyrant","-","Kishin","Lady","Snake","-","Kishin"]
+  },
+  {
+    "name": "Lady",
+    "alignment": "Light-Chaos",
+    "description": "They are commonly high ranking earth goddesses, mother goddesses and/or fertility goddesses of various pantheons. These goddesses fit the description of an earth mother deity. Also they are generally the female consort of a chaotic deity, such as Parvati/Durga/Kali, being the wives of Shiva, and Kushinada-hime, being the wife of Susano-o. They may still maintain a benevolent personality, but not always. Ladies are less apt at healing than the Megami race, but have more variety with their spells.\n\nLike most goddesses, Ladies are not very good at using physical attacks. They wield a wide range of magic, usually offensive and defensive spells. Ladies, like all light-aligned races, are difficult to fuse.\n\nChronologically, Jiboshin was first introduced in Shin Megami Tensei II, with some of its demons derived from the Femme and Megami races in Shin Megami Tensei, for example, Kali and Kikuri-Hime respectively.",
+    "results": ["Megami","Deity","Fury","Dragon","Foul","Night","Haunt","-","-","-","-","Holy","Tree","Deity","Kishin","Genma","Snake","Kishin","Femme","-","-","-","-","Kishin","-","Fury","Femme","Femme","Kishin","Brute","Femme","-","-","-","Megami","-","Kishin","Holy","Snake","-","-"]
+  },
+  {
+    "name": "Dragon",
+    "alignment": "Light-Chaos",
+    "description": "Dragon (竜神 or 龍神, Ryūjin, lit. \"Dragon God\") is a race of demons in the Shin Megami Tensei series. Most Dragons are derived from Far Eastern mythology.",
+    "results": ["Fury","Herald","Avatar","Snake","Drake","-","Genma","Lady","-","-","-","Lady","Fury","Tree","Night","Night","Wilder","Lady","Fallen","-","-","-","-","Fallen","Fury","-","Femme","Brute","Kishin","Fallen","Foul","-","-","-","Drake","-","Night","Lady","Wilder","-","Femme"]
+  },
+  {
+    "name": "Kishin",
+    "alignment": "Light-Chaos",
+    "description": "The Kishin (鬼神, Kishin)? or Guardian are all patron gods or warrior deities from various pantheons or countries. They protect a specific direction, race or country accordingly. Most of them however, are derived from Far Eastern mythology. They are generally physically overwhelming demons, and are all capable of utilizing weapons. With few exceptions, the Buddhist Four Heavenly Kings always make their appearance in every single Shin Megami Tensei installment.",
+    "results": ["-","Genma","Night","Jirae","Snake","Avian","Tyrant","Divine","-","-","-","Fury","Dragon","Brute","Brute","Tree","Holy","Tree","Dragon","-","-","-","-","Fallen","Femme","Femme","-","Dragon","Fury","Lady","Beast","-","-","-","Jaki","-","Brute","Fury","Holy","-","Femme"]
+  },
+  {
+    "name": "Fallen",
+    "alignment": "Neutral-Chaos",
+    "description": "The Fallen (堕天使, Datenshi)? is a race of demons in the series. These demons are for the most part related to Darkness, most of them have the trend of resisting Darkness or ailment attack. The Fallen demons are usually Neutral-Chaos except in certain games where they are Dark-Chaos, in Giten Megami Tensei: Tokyo Mokushiroku there are two races: the Datenshi are Dark-Chaos and the Futenshi are Neutral-Chaos. They can be thought of as a Neutral version of the Tyrant. In religion they are fallen angels that sided with Lucifer in his rebellion, whose bodies were twisted and made ugly upon their defeat.\n\nA majority of the Fallen demons come from the Ars Goetia, a 17th century grimoire. Samael, Abaddon, Baphomet, Ukobach, Arioch, Gagyson, Melchom, Mithras, Abraxas, Betelgeuse and Satan are the odd ones out with many of them classified in other races across the series.",
+    "results": ["-","Foul","Raptor","Vile","-","Divine","Snake","Avatar","Raptor","Drake","-","Fury","Snake","Beast","Holy","Night","Snake","Dragon","Dragon","Tyrant","Raptor","Drake","Raptor","Tyrant","Femme","Brute","Dragon","-","Night","Lady","Brute","Drake","Raptor","Jaki","Divine","Jaki","Tyrant","Fury","Snake","Tyrant","Femme"]
+  },
+  {
+    "name": "Brute",
+    "alignment": "Neutral-Chaos",
+    "description": "Brute, known in Japan as Mystic Ogres (妖鬼, Yōki)?, is a race of demons in the Megami Tensei series. As the name suggests, the majority of these demons are physical attackers; many of them are variants of the basic Oni. Albeit ambiguous with the Touki race, Brute is Chaos aligned, while Touki is Neutral. Moreover, with few exceptions from other Asian legends, most Brute demons were originated from Japanese lore.",
+    "results": ["Flight","Nymph","Genma","Jirae","Jirae","Beast","Jaki","Femme","Jaki","Haunt","Raptor","Jirae","Holy","Jaki","Kishin","Femme","Snake","Fairy","Dragon","Spirit","Jaki","Foul","Wilder","-","Kishin","Kishin","Fury","Night","-","Jaki","Spirit","Jaki","Vermin","Jaki","Spirit","Jaki","Spirit","Jirae","Snake","Spirit","Kishin"]
+  },
+  {
+    "name": "Femme",
+    "alignment": "Neutral-Chaos",
+    "description": "It is derived from the French term for \"woman,\" femme. They're female demons and lesser goddesses associated with evil, battle or death. Some may choose to disguise their nature to trick their victims. They are a balanced race, being good at using both physical skills and magic. Femme doesn't stand out as a race, though they can be useful as allies.",
+    "results": ["Nymph","-","Megami","Lady","Nymph","Beast","Haunt","-","Jaki","Wood","Raptor","Snake","Holy","Jirae","Kishin","Lady","Holy","Brute","Drake","Spirit","-","Haunt","-","Lady","Brute","Fallen","Lady","Lady","Jaki","-","Lady","Jaki","-","Haunt","Nymph","Spirit","Spirit","Snake","Holy","Spirit","Brute"]
+  },
+  {
+    "name": "Night",
+    "alignment": "Neutral-Chaos",
+    "description": "Night (夜魔, Yama)? is a race of demons in the Shin Megami Tensei series.\n\nNight demons are demons, spirits and lesser deities associated with the night. They often use deception to drain the life out of their victims (Succubus and Incubus are perfect examples). They are powerful spellcasters that rely on curses and ailments to make up for their weak physical attacks.",
+    "results": ["Yoma","Nymph","Raptor","Yoma","Megami","Fallen","Jirae","Femme","Jaki","Wood","Foul","Yoma","Beast","Jirae","Brute","Brute","Jirae","Fairy","Yoma","Haunt","Vermin","Haunt","Raptor","Jirae","Femme","Foul","Beast","Brute","Spirit","Lady","-","Jaki","Vermin","Foul","Yoma","Spirit","Haunt","Yoma","Jirae","Haunt","Femme"]
+  },
+  {
+    "name": "Tyrant",
+    "alignment": "Dark-Chaos",
+    "description": "The Tyrants, known as Demon King (魔王, Maou)? in Japan, are the major demonic lords from various pantheons in the series. They are one of the few races that are still referred to as Clans in the later officially translated games though they seem to have reverted to a Race in Devil Survivor 2. Generally they are the major enemy of their respective chief deity. They are the most powerful Dark race, and also one of the most powerful races in general. They're great at everything they do and have no major weakness. Tyrants are basically the Dark version of the Deity race and are just as difficult to fuse. Another Race related to the Tyrant are the Fallen which can be considered a Neutral LND Counterpart.",
+    "results": ["-","-","-","-","Raptor","Drake","Jaki","Jaki","Reaper","Vermin","Drake","-","-","-","-","Haunt","Wilder","Jaki","Drake","Vile","Drake","Drake","Raptor","-","-","-","-","Drake","Jaki","Jaki","Jaki","-","Wilder","Jaki","Reaper","Jaki","Vile","-","Wilder","Vile","-"]
+  },
+  {
+    "name": "Drake",
+    "alignment": "Dark-Chaos",
+    "description": "Drake or Evil Dragon (邪竜, Jaryū or 邪龍) is a race of demons in the Shin Megami Tensei series. They are evil serpent-like creatures with an insatiable hunger. They will attack anything in their way, like the Wood.",
+    "results": ["-","-","-","-","Raptor","Foul","Vermin","-","Wilder","Vermin","Raptor","-","-","-","-","Wood","Foul","Wilder","Vermin","Spirit","Wood","Tyrant","Spirit","-","-","-","-","Raptor","Vermin","-","Vermin","Wilder","-","Wood","Dragon","Wood","Spirit","-","Foul","Spirit","-"]
+  },
+  {
+    "name": "Spirit",
+    "alignment": "Dark-Chaos",
+    "description": "Spirit (悪霊, Akuryō, lit. \"Evil Spirit\") or (邪霊, Jarei \"Wicked Spirit\", in Majin Tensei) is a race of demons in the Megami Tensei series. Akuryou/Spirits are popullar folklore ghosts and demons originated from human souls.",
+    "results": ["-","-","-","-","Jaki","Raptor","Haunt","Haunt","Haunt","Wilder","Raptor","-","-","-","-","Haunt","Wilder","Jaki","Drake","Wood","Drake","Haunt","Wood","-","-","-","-","Jaki","Jaki","Haunt","Foul","Jaki","Wood","-","-","Wood","Wood","-","Wilder","Wood","-"]
+  },
+  {
+    "name": "Foul",
+    "alignment": "Dark-Chaos",
+    "description": "Foul (外道, Gedou, lit. Heretical Doctrine) is a race of demons in the Shin Megami Tensei series. Generally the demons of this race can be divided into:\n\nCreatures with a strange body, either slimey (Slime, Ooze, etc) or with an highly alien body (Backbeard, Old One, Grimies, etc)\nGhosty beings born from various urban legends (Doppelganger)\nLowly humans who became demons (Yakuza, Hooligan, Norris, etc)\nLike the Haunt demons, most of the Foul demons are weak to Expel (Light) spells.",
+    "results": ["Vile","Lady","Raptor","Wood","Fallen","Snake","Night","Femme","Tyrant","Avian","Tree","Reaper","Wilder","Vermin","Haunt","Jirae","Flight","Fairy","Beast","Vile","Holy","Kishin","Avatar","Tyrant","Megami","Drake","Jaki","Divine","Spirit","Nymph","Yoma","Reaper","Dragon","-","-","Genma","Vile","Reaper","Flight","Vile","Megami"]
+  },
+  {
+    "name": "Haunt",
+    "alignment": "Dark-Chaos",
+    "description": "Haunt (幽鬼, Yūki, lit. \"Haunting Ghost\") or Ghost is a race of demons in the Megami Tensei series. It generally collects the base ghostly beings who bring disaster upon mankind or suffer their inferior life due to the bad karma accumulated from the previous life. Preta is the prominent example featured in the series of the latter kind.\n\nIn some installments, some of the demon of this race is instead categorized to the Foul race.",
+    "results": ["-","-","-","-","Jaki","Raptor","-","Spirit","Raptor","Wilder","Reaper","-","-","-","-","Wood","Wilder","Jaki","Wood","Spirit","Wood","-","Wood","-","-","-","-","Jaki","Jaki","Spirit","Spirit","Jaki","Wood","Wood","Genma","-","Spirit","-","Wilder","Spirit","-"]
+  },
+  {
+    "name": "Fiend",
+    "alignment": "Dark-Neutral",
+    "description": "The Fiend (魔人, Majin)? is a race of demons, often powerful in major attributes. With a few exceptions, the Fiends are dominantly portrayed as clothed skeletons due to the fact that they are often the incarnations of death or evil in various forms, and even then, most of the exceptions tend to be closely associated with death and disaster of sorts. In some games, such as Shin Megami Tensei III: Nocturne and Shin Megami Tensei: Devil Summoner, some bosses of the Fiend race are demon-related humans, like Dante and Sid Davis.",
+    "results": ["Megami","Tree","Holy","Fairy","Vile","Spirit","Haunt","Spirit","Tyrant","Spirit","Spirit","Reaper","Deity","Fairy","Deity","Spirit","Spirit","Spirit","Spirit","Vile","Spirit","Haunt","Spirit","Kishin","Kishin","Night","Brute","Tyrant","Spirit","Spirit","Haunt","Vile","Spirit","Wood","Vile","Spirit","-","Reaper","Holy","Tyrant","Kishin"]
+  },
+  {
+    "name": "Enigma",
+    "alignment": "Light-Neutral",
+    "description": "Enigma (秘神, Hishin)? is a race of demons in the series. It is composed of esoteric or mysterious gods whose origins and attributes aren't completely known.",
+    "results": ["Megami","Avatar","Holy","Yoma","Herald","Herald","Fairy","Femme","-","-","-","-","Genma","Avatar","Reaper","Genma","Holy","Brute","Beast","-","-","-","-","Lady","Holy","Lady","Fury","Fury","Jirae","Snake","Yoma","-","-","-","Reaper","-","Reaper","-","Holy","-","Holy"]
+  },
+  {
+    "name": "UMA",
+    "alignment": "Neutral-Neutral",
+    "description": "UMA (珍獣, Chinjū, lit. \"Rare Beast\") is a race of demons in the Shin Megami Tensei series. The English name is an abbreviation of Unidentified Mysterious Animal, another term for cryptids - creatures that have been reported to exist but of which there is little to no scientific evidence, including legendary creatures like Yetis or the Jersey Devil.",
+    "results": ["Avatar","Fallen","Flight","Avatar","Holy","Yoma","Avatar","Avatar","Wilder","Vermin","Wilder","Holy","Avian","Avian","Holy","Flight","-","Yoma","Wilder","Spirit","Vermin","Wilder","Wilder","Snake","Snake","Wilder","Holy","Snake","Snake","Holy","Jirae","Wilder","Foul","Wilder","Flight","Wilder","Holy","Holy","-","Spirit","Snake"]
+  },
+  {
+    "name": "Zealot",
+    "alignment": "Dark-Neutral",
+    "description": "Zealot (狂神, Kyōshin)? or Mad God is a race of demons in the Shin Megami Tensei series. They are gods who have somehow been hurt or punished by the laws of their respective pantheons and can often be found in other races, like Fury or Vile; or by demons whose rituals consist in ectastic parties.",
+    "results": ["-","-","-","-","Vile","Spirit","Haunt","Spirit","Tyrant","Spirit","Spirit","-","-","-","-","Spirit","Spirit","Spirit","Spirit","-","Spirit","Haunt","Spirit","-","-","-","-","Tyrant","Spirit","Spirit","Haunt","Vile","Spirit","Wood","Vile","Spirit","Tyrant","-","Spirit","-","-"]
+  },
+  {
+    "name": "Geist",
+    "alignment": "Light-Chaos",
+    "description": "Entity (威霊, I-rei or I-ryō)?, also known as Geist, is a race of demons in the series. Demons of this race are among the ancient deities who are no longer worshiped by the disciples of the respective religion or culture.",
+    "results": ["Megami","Deity","Fury","Dragon","Foul","Night","Haunt","-","-","-","-","Holy","Tree","Deity","Kishin","Genma","Snake","Kishin","Femme","-","-","-","-","Kishin","-","Femme","Femme","Femme","Kishin","Brute","Femme","-","-","-","Megami","-","Kishin","Holy","Snake","-","-"]
+  }
+]

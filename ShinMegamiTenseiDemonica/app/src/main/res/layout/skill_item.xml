@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name ="skill"
+            type ="dam_a46304.shinmegamitenseidemonica.entities.Skill"/>
+        <variable
+            name ="clickListener"
+            type ="android.view.View.OnClickListener"/>
+    </data>
+    <com.skydoves.transformationlayout.TransformationLayout
+        android:id ="@+id/transformationLayout"
+        android:layout_width ="match_parent"
+        android:layout_height ="wrap_content"
+        app:transformation_duration ="550">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="6dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@drawable/skill_round"
+                android:onClick="@{ clickListener }"
+                tools:ignore="UnusedAttribute">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/name"
+                    android:layout_width="310dp"
+                    android:layout_height="match_parent"
+                    android:elevation="4dp"
+                    android:fontFamily="@font/rhodium_libre"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:paddingStart="60dp"
+                    android:text="@{skill.name}"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/image"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="Megidolaon" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/round_btn"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:paletteCard="@{cardView}"
+                    app:paletteImage="@{skill.image}" />
+                />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </com.skydoves.transformationlayout.TransformationLayout>
+</layout>
